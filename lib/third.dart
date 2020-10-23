@@ -1,3 +1,4 @@
+import 'package:barcode_scanner/scanner.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -7,6 +8,15 @@ class Third extends StatefulWidget {
 }
 
 class _ThirdState extends State<Third> {
+  @override
+  void initState() {
+    // TODO: implement initState
+    Future.delayed(Duration(seconds: 2),(){
+
+      Navigator.push(context, MaterialPageRoute(builder: (context)=> Scanner()));
+    });
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -1,4 +1,6 @@
+import 'package:barcode_scanner/first.dart';
 import 'package:barcode_scanner/home.dart';
+import 'package:barcode_scanner/scanner.dart';
 import 'package:barcode_scanner/second.dart';
 import 'package:barcode_scanner/third.dart';
 import 'package:flutter/material.dart';
@@ -29,7 +31,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: second(),
+      home: home(),
     );
   }
 }
